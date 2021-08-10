@@ -38,7 +38,7 @@ document.getElementById(`add`).addEventListener(`click`, function () {
 
 })
 
-document.getElementById(`item`).addEventListener(`keydown`, function (e) {
+document.getElementById(`item`).addEventListener(`keypress`, function (e) {
     let value = this.value;
     if (e.keycode == 13 && value) {
         addItem(value)
