@@ -38,19 +38,19 @@ document.getElementById(`add`).addEventListener(`click`, function () {
 
 })
 
-document.getElementById(`item`).addEventListener(`keydown`, function(e) {
+document.getElementById(`item`).addEventListener(`keydown`, function (e) {
     let value = this.value;
-    if(e.code === `Enter` && value){
-    addItem(value)
+    if (e.code === `Enter` && value) {
+        addItem(value)
     }
 })
 
 function addItem(value) {
     addItemTodo(value);
-        document.getElementById(`add`).value = ` `;
+    document.getElementById(`add`).value = ` `;
 
-        datos.todo.push(value);
-        arrayActualizado()
+    datos.todo.push(value);
+    arrayActualizado()
 }
 function ultimaFuncion() {
     if (!datos.todo.length && !datos.completado.length) return;
