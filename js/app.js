@@ -28,7 +28,7 @@ fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
 ultimaFuncion()
 
 
-
+// eventos
 
 document.getElementById(`add`).addEventListener(`click`, function () {
     let value = document.getElementById(`item`).value;
@@ -44,6 +44,8 @@ document.getElementById(`item`).addEventListener(`keypress`, function (e) {
         addItem(value)
     }
 })
+
+// funciones
 
 function addItem(value) {
     addItemTodo(value);
@@ -122,6 +124,7 @@ function agregoElemento() {
 
 }
 
+// funcion que manipula al dom
 
 // Agrego tareas a la lista.
 
