@@ -17,11 +17,6 @@
 <body>
     <header>
 
-        <button id="dark" class="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-                <path
-                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
-            </svg></button>
 
         <form>
             <div>
@@ -35,15 +30,37 @@
             </div>
         </form>
     </header>
-    <div class="container">
+    <main>
+        <div class="container">
 
-        <!--- tareas a realizar-->
-        <ul class="todo" id="todo"></ul>
+            <!--- tareas a realizar-->
+            <ul class="todo" id="todo"></ul>
 
-        <!--- tareas realizadas-->
-        <ul class="todo" id="completed"></ul>
+            <!--- tareas realizadas-->
+            <ul class="todo" id="completed"></ul>
 
-    </div>
+            <div>
+
+                <button id="dark" class="dark position2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                <path
+                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+            </svg></button>
+
+                <a href="https://web.whatsapp.com/">
+                    <img src="./resources/wpp.png" class="position">
+                </a>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="darkModePosition">
+            <p class="darkModePositionDark">Dark Mode On</p>
+        </div>
+
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
