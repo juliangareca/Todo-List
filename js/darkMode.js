@@ -53,13 +53,14 @@ if (localStorage.getItem("modo") == "oscuro") {
 }
 
 
-// ----------- no me salio :(
+// ------------ Evento con Jquery ------------------
 
 
-$(".dark").click(function() {
-    if (localStorage.getItem("modo") == "oscuro") {
-        $(".darkModePositionLight").fadeIn();
-    } else {
-        $(".darkModePositionDark").fadeOut();
-    }
+$(document).ready(function() {
+    $(".dark").click(function() {
+        $(".darkModePositionDark").fadeToggle(1000);
+        $(".darkModePositionDark").css("display", "none");
+        // $(".darkModePositionDark").fadeToggle(1000);
+
+    });
 });
