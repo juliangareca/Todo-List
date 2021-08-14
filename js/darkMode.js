@@ -59,8 +59,5 @@ if (localStorage.getItem("modo") == "oscuro") {
 $(document).ready(function() {
     $(".dark").click(function() {
         $(".darkModePositionDark").fadeToggle(1000);
-        $(".darkModePositionDark").css("display", "none");
-        // $(".darkModePositionDark").fadeToggle(1000);
-
     });
 });
