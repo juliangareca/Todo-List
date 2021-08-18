@@ -1,4 +1,3 @@
-
 let datos = (localStorage.getItem(`TodoList`)) ? JSON.parse(localStorage.getItem(`TodoList`)) : {
     todo: [],
     completado: [],
@@ -30,7 +29,7 @@ ultimaFuncion()
 
 // eventos
 
-document.getElementById(`add`).addEventListener(`click`, function () {
+document.getElementById(`add`).addEventListener(`click`, function() {
     let value = document.getElementById(`item`).value;
     if (value) {
         addItem(value)
@@ -38,7 +37,7 @@ document.getElementById(`add`).addEventListener(`click`, function () {
 
 })
 
-document.getElementById(`item`).addEventListener(`keypress`, function (e) {
+document.getElementById(`item`).addEventListener(`keypress`, function(e) {
     let value = this.value;
     if (e.keycode == 13 && value) {
         addItem(value)
@@ -54,6 +53,7 @@ function addItem(value) {
     datos.todo.push(value);
     arrayActualizado()
 }
+
 function ultimaFuncion() {
     if (!datos.todo.length && !datos.completado.length) return;
 
@@ -162,3 +162,30 @@ function addItemTodo(texto, completed) {
 
     lista.insertBefore(item, lista.childNodes[0]);
 }
+
+
+
+
+const URLGET = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+
+
+
+$("#dolar").click(() => {
+    $.get(URLGET, function(respuesta, estado) {
+
+        if (estado === "success") {
+
+
+            respuesta.forEach(element => {
+                $(".dolarHoy").append(`
+                <div class="border">                
+                <p>${element.casa.nombre}</p>
+                <p>${element.casa.venta}</p>
+                </div>
+                `)
+
+            });
+
+        }
+    });
+});

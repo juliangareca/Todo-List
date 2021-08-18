@@ -51,13 +51,3 @@ if (localStorage.getItem("modo") == "oscuro") {
 } else {
     aclarar()
 }
-
-
-// ------------ Evento con Jquery ------------------
-
-
-$(document).ready(function() {
-    $(".dark").click(function() {
-        $(".darkModePositionDark").fadeToggle(1000);
-    });
-});
