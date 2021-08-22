@@ -169,12 +169,10 @@ function addItemTodo(texto, completed) {
 const URLGET = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
 
 
-
 $("#dolar").click(() => {
     $.get(URLGET, function(respuesta, estado) {
 
         if (estado === "success") {
-
 
             respuesta.forEach(element => {
                 $(".dolarHoy").append(`
