@@ -189,3 +189,9 @@ $("#dolar").click(() => {
         }
     });
 });
+
+$(document).ready(function() {
+    $(".btn-remove").click(function() {
+        $(".border").remove();
+    });
+});
