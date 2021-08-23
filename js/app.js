@@ -1,5 +1,8 @@
 let datos = (localStorage.getItem(`TodoList`)) ? JSON.parse(localStorage.getItem(`TodoList`)) : {
-    todo: [],
+    todo: ["Entrar al Top 10 para ser tutor de DW", "¡Aprende a enseñar, enseñando aprenderas!", `Buenas tardes Julian! Antes que nada queria agradecer por la remontada que le diste al curso! Queria contarte
+    que desde que llegaste y gracias a los videos que subieron de las clases 1 a 6 de la otra camada, se hizo muchiismo mas amena
+    la cursada, aprendi contenido del que no me creia capaz y aunque aun me siento un pollito mojado, ya arrancamos con el curso de
+    React! una vez mas, un millon de gracias por haber sido nuestro Profesor! un honor, muchos exitos!`],
     completado: [],
 };
 
